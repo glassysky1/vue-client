@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container">
+  <div class="app-container" style="background:#fff">
     <mt-header fixed title="小月-vue项目"></mt-header>
     <transition>
       <router-view></router-view>
@@ -32,6 +32,7 @@ export default {};
 <style lang="stylus" ref="stylesheet/stylus">
 .app-container
   padding-top 40px
+  padding-bottom 50px
   overflow-x hidden
   .v-enter-active, .v-leave-active
     transition all 0.5s ease

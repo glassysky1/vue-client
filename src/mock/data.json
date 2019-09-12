@@ -1,12 +1,102 @@
 {
-  "lunbo":[
+  "lunbo": [
     {
-      "img":"https://shsxt.shsxt.com/2018/0510/20180510054057204.jpg",
-      "url":"http://m.shsxt.com/index.php?m=content&c=index&a=lists&catid=74"
+      "img": "https://shsxt.shsxt.com/2018/0510/20180510054057204.jpg",
+      "url": "http://m.shsxt.com/index.php?m=content&c=index&a=lists&catid=74"
     },
     {
-      "img":"https://shsxt.shsxt.com/2018/0717/20180717054215849.jpg",
-      "url":"https://www.shsxt.com/download/python/100.html"
+      "img": "https://shsxt.shsxt.com/2018/0717/20180717054215849.jpg",
+      "url": "https://www.shsxt.com/download/python/100.html"
+    }
+  ],
+  "newslist": [
+    {
+      "add_time": "2016-04-16T03:50:28.000Z",
+      "click": 1,
+      "id": 1,
+      "img_url": "https://ss3.bdstatic.com/yrwDcj7w0QhBkMak8IuT_XF5ehU5bvGh7c50/logopic/e010f7131771f075fa8d5a9bbddfa4fc_fullsize.jpg@s_1,w_484,h_484",
+      "tilte": "是打飞机时代峻峰is胜多负少大发送",
+      "zhaiyao": "阿斯蒂芬hi阿萨德覅胜多负少大防守打法算地方"
+    },
+    {
+      "add_time": "2016-04-16T03:50:28.000Z",
+      "click": 2,
+      "id": 2,
+      "img_url": "https://img.wowoqq.com/allimg/150510/1-150510020945.jpg",
+      "tilte": "是胜多负少大发送",
+      "zhaiyao": "阿斯蒂芬hi阿萨德覅胜多负少大防守打法算地方"
+    },
+    {
+      "add_time": "2017-04-16T03:50:28.000Z",
+      "click": 3,
+      "id": 3,
+      "img_url": "https://img.wowoqq.com/allimg/150510/1-150510020944.jpg",
+      "tilte": "代峻峰is胜多负少大发送",
+      "zhaiyao": "hi阿萨德覅胜多负少大防守打法算地方"
+    },
+    {
+      "add_time": "2018-04-16T03:50:28.000Z",
+      "click": 4,
+      "id": 4,
+      "img_url": "https://img.wowoqq.com/allimg/150319/1-15031ZR322.jpg",
+      "tilte": "是打飞机时代峻峰is胜多负少大发送",
+      "zhaiyao": "阿斯蒂芬hi阿萨德覅胜多负少大防守打法算地方"
+    },
+    {
+      "add_time": "2016-04-16T03:50:28.000Z",
+      "click": 1,
+      "id": 5,
+      "img_url": "https://ss3.bdstatic.com/yrwDcj7w0QhBkMak8IuT_XF5ehU5bvGh7c50/logopic/e010f7131771f075fa8d5a9bbddfa4fc_fullsize.jpg@s_1,w_484,h_484",
+      "tilte": "是打飞机时代峻峰is胜多负少大发送",
+      "zhaiyao": "阿斯蒂芬hi阿萨德覅胜多负少大防守打法算地方"
+    },
+    {
+      "add_time": "2016-04-16T03:50:28.000Z",
+      "click": 1,
+      "id": 6,
+      "img_url": "https://ss3.bdstatic.com/yrwDcj7w0QhBkMak8IuT_XF5ehU5bvGh7c50/logopic/e010f7131771f075fa8d5a9bbddfa4fc_fullsize.jpg@s_1,w_484,h_484",
+      "tilte": "是打飞机时代峻峰is胜多负少大发送",
+      "zhaiyao": "阿斯蒂芬hi阿萨德覅胜多负少大防守打法算地方"
+    },
+    {
+      "add_time": "2016-04-16T03:50:28.000Z",
+      "click": 1,
+      "id": 7,
+      "img_url": "https://ss3.bdstatic.com/yrwDcj7w0QhBkMak8IuT_XF5ehU5bvGh7c50/logopic/e010f7131771f075fa8d5a9bbddfa4fc_fullsize.jpg@s_1,w_484,h_484",
+      "tilte": "是打飞机时代峻峰is胜多负少大发送",
+      "zhaiyao": "阿斯蒂芬hi阿萨德覅胜多负少大防守打法算地方"
+    },
+    {
+      "add_time": "2016-04-16T03:50:28.000Z",
+      "click": 1,
+      "id": 8,
+      "img_url": "https://ss3.bdstatic.com/yrwDcj7w0QhBkMak8IuT_XF5ehU5bvGh7c50/logopic/e010f7131771f075fa8d5a9bbddfa4fc_fullsize.jpg@s_1,w_484,h_484",
+      "tilte": "是打飞机时代峻峰is胜多负少大发送",
+      "zhaiyao": "阿斯蒂芬hi阿萨德覅胜多负少大防守打法算地方"
+    },
+    {
+      "add_time": "2016-04-16T03:50:28.000Z",
+      "click": 1,
+      "id": 9,
+      "img_url": "https://ss3.bdstatic.com/yrwDcj7w0QhBkMak8IuT_XF5ehU5bvGh7c50/logopic/e010f7131771f075fa8d5a9bbddfa4fc_fullsize.jpg@s_1,w_484,h_484",
+      "tilte": "是打飞机时代峻峰is胜多负少大发送",
+      "zhaiyao": "阿斯蒂芬hi阿萨德覅胜多负少大防守打法算地方"
+    }
+  ],
+  "newsinfo": [
+    {
+      "id": 1,
+      "tilte": "是打飞机时代峻峰is胜多负少大发送",
+      "click": 2,
+      "add_time": "2016-04-16T03:50:28.000Z",
+      "content":"脱离贫困 - 满足基本需求走向小康脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 -脱离贫困 - 满足基本需求走向小康 - - 丰满格式设计提升精神 - 添加容错机制加强品质 - 加固安全机制需求说明用户登录接口用户通过客户端发送tel和pwd两个字段来登录客户端后台根据tel和pwd来判断用户是否有权限来登录客户端,并返回相应结果问题分析这时候我们已经可以很优雅的开发接口了,但是我们只是优雅的开发而已,面对优雅的开发者而优雅,生活中总是存在不优雅的事物-比如觊觎数据的骇客或者好奇者,就目前为止的设计虽然优雅却太过脆弱明文传输并使用http协议,无法逃过抓包逻辑简单,易于伪造解决方案使用https对于一些机密参数但是不需要知晓明文,使用不可逆加密传输,比如密码:可以使用不可逆的加密算法,比如salt_md5对于一些机密参数但是需要知晓明文,使用可逆的加密传输,比如id:可以使用双方协商好的加密算法添加过期机制发送参数添加timestamp字段,代表当前发送请求的时间戳,服务端设置过期时间,比如1分钟,接受到客户端请求的时候,对比timestamp,如果时间相差超过1分钟,则视为无效请求"  
+    },
+    {
+      "add_time": "2016-04-16T03:50:28.000Z",
+      "click": 2,
+      "id": 2,
+      "tilte": "是胜多负少大发送",
+      "content":"脱离贫困 - 满足基本需求走向小康 - 丰满格式设计提升精神 - 添加容错机制加强品质 - 加固安全机制需求说明用户登录接口用户通过客户端发送tel和pwd两个字段来登录客户端后台根据tel和pwd来判断用户是否有权限来登录客户端,并返回相应结果问题分析这时候我们已经可以很优雅的开发接口了,但是我们只是优雅的开发而已,面对优雅的开发者而优雅,生活中总是存在不优雅的事物-比如觊觎数据的骇客或者好奇者,就目前为止的设计虽然优雅却太过脆弱明文传输并使用http协议,无法逃过抓包逻辑简单,易于伪造解决方案使用https对于一些机密参数但是不需要知晓明文,使用不可逆加密传输,比如密码:可以使用不可逆的加密算法,比如salt_md5对于一些机密参数但是需要知晓明文,使用可逆的加密传输,比如id:可以使用双方协商好的加密算法添加过期机制发送参数添加timestamp字段,代表当前发送请求的时间戳,服务端设置过期时间,比如1分钟,接受到客户端请求的时候,对比timestamp,如果时间相差超过1分钟,则视为无效请求"  
     }
   ]
 }
