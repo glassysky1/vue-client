@@ -42,4 +42,4 @@ export default {};
     opacity 0
     transform translateX(-100%)
     position absolute
-</style>
+</style> 
