@@ -3,11 +3,17 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
-
-import { Button,Header } from "mint-ui";
+import "./mock/mockServer";
+import { Button,Header ,Swipe,SwipeItem} from "mint-ui";
 import 'mint-ui/lib/style.css'
 import './lib/mui/css/mui.min.css'
-//注册全局组件在main.js
+import './lib/mui/css/icons-extra.css'
+import './lib/mui/fonts/mui-icons-extra.ttf'
+import Axios from "axios"
+Vue.prototype.$axios = Axios
+//注册全局组件在main.jsimport { Swipe, SwipeItem } from 'mint-ui';
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
 Vue.component(Button.name, Button)
 Vue.component(Header.name, Header)
 
