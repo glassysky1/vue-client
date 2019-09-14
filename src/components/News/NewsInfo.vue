@@ -1,13 +1,13 @@
 <template>
   <div class="newinfo-container" style="background:#fff">
-    <h3 class="title">新闻标题</h3>
+    <h3 class="title">{{newsinfo.title}}</h3>
     <p class="subtitle">
       <span>发表时间:{{newsinfo.add_time|date-format}}</span>
       <span>点击:{{newsinfo.click}}次</span>
     </p>
     <hr />
     <div class="content" v-html="newsinfo.content"></div>
-    <Comments/>
+    <Comments :id="id"/>
   </div>
 </template>
 
@@ -15,7 +15,7 @@
 import Comments from "../subcomponents/Comments";
 import { Toast } from "mint-ui";
 export default {
-  components:{
+  components: {
     Comments
   },
   data() {
@@ -24,18 +24,14 @@ export default {
       newsinfo: {}
     };
   },
-  async mounted() {
-    await this.$axios.get("/getnewsinfo").then(result => {
-      if (result.data.code === 0) {
-       result.data.data.forEach(newsinfo=>{
-         if(this.id===newsinfo.id.toString()){
-           this.newsinfo = newsinfo
-         }
-       })
-      } else {
-        Toast("获取失败");
-      }
-    });
+  methods: {
+    async getNewsInfo() {
+      const {data:res } = await this.$axios.get(`/getnewsinfo/${this.id}`);
+      this.newsinfo = res.data;
+    }
+  },
+  mounted() {
+    this.getNewsInfo();
   }
 };
 </script>

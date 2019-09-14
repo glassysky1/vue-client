@@ -5,7 +5,7 @@
         <router-link :to="'/home/newsinfo/'+news.id">
           <img class="mui-media-object mui-pull-left" :src="news.img_url" />
           <div class="mui-media-body">
-            <h2>{{news.tilte}}</h2>
+            <h2>{{news.title}}</h2>
             <p class="mui-ellipsis"><span>发表时间:{{news.add_time|date-format}}</span><span>点击:{{news.click}}次</span></p>
           </div>
         </router-link>
@@ -24,9 +24,12 @@ export default {
     }
   },
   async mounted(){
-    await this.$axios.get('/getnewslist').then(result=>{
-      this.newsList = result.data.data
-    })
+    const {data:res} = await await this.$axios.get('/getnewslist')
+    if(res.code===0){
+      this.newsList = res.data
+    }
+    console.log(res);
+    
   }
 };
 </script>

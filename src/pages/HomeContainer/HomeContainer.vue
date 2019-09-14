@@ -57,13 +57,16 @@ export default {
       lunbotuList: []
     };
   },
-  methods: {},
-  async mounted() {
-    await this.$axios.get("/getlunbo").then(result => {
-      if (result.data.code === 0) {
-        this.lunbotuList = result.data.data;
+  methods: {
+    async getLunbo(){
+      const {data:res} = await this.$axios.get('/getlunbo')
+      if(res.code===0){
+      this.lunbotuList = res.data
       }
-    });
+    }
+  },
+   mounted() {
+     this.getLunbo()
   }
 };
 </script>
