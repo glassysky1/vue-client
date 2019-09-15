@@ -1,12 +1,6 @@
 <template>
   <div style="{background:#fff}">
-    <mt-swipe :auto="4000">
-      <mt-swipe-item v-for="(item,index) in lunbotuList" :key="index">
-        <a :href="item.url">
-          <img :src="item.img" alt />
-        </a>
-      </mt-swipe-item>
-    </mt-swipe>
+    <Swiper :lunbotuList ="lunbotuList" :isFull="true" />
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <router-link to="/home/newslist">
@@ -15,16 +9,16 @@
         </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <a href="#">
+        <router-link to="/home/photolist">
           <img src="../../assets/images/picShare.png" alt="">          
           <div class="mui-media-body">图片分享</div>
-        </a>
+        </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <a href="#">
+        <router-link to="/home/goodslist">
           <img src="../../assets/images/goodShow.png" alt="">
           <div class="mui-media-body">商品购买</div>
-        </a>
+        </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <a href="#">
@@ -51,7 +45,11 @@
 </template>
 
 <script>
+import Swiper from "../../components/Subcomponents/Swiper";
 export default {
+  components:{
+    Swiper
+  },
   data() {
     return {
       lunbotuList: []
@@ -63,6 +61,7 @@ export default {
       if(res.code===0){
       this.lunbotuList = res.data
       }
+
     }
   },
    mounted() {

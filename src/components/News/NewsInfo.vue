@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Comments from "../subcomponents/Comments";
+import Comments from "../Subcomponents/Comments";
 import { Toast } from "mint-ui";
 export default {
   components: {

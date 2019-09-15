@@ -8,5 +8,8 @@ module.exports = {
         "style": true
       }
     ]
+  ],
+  ignore:[
+    './src/lib/mui/js/mui.js'
   ]
 };
