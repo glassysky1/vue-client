@@ -1,7 +1,7 @@
 <template>
   <div class="goodsinfo-container">
     <transition @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter">
-    <div class="ball" v-show="ballFlag" ref="ball"></div>  
+      <div class="ball" v-show="ballFlag" ref="ball"></div>
     </transition>
     <!-- 商品轮播图区 -->
     <div class="mui-card">
@@ -23,7 +23,7 @@
           </p>
           <p>
             购买数量:
-            <GoodsInfoNumber />
+            <GoodsInfoNumber :max="goodsInfo.stock_quantity" @getCount="getSelectedCount" />
           </p>
           <p>
             <mt-button type="primary" size="small">立即购买</mt-button>
@@ -63,7 +63,8 @@ export default {
       id: this.$route.params.id,
       lunbotu: [],
       goodsInfo: {},
-      ballFlag:false
+      ballFlag: false,
+      selectedCount: 1
     };
   },
   methods: {
@@ -86,30 +87,43 @@ export default {
     goToComment(id) {
       this.$router.push({ name: "goodsComment", params: { id } });
     },
-    addToShopCar(){
-      this.ballFlag = !this.ballFlag
+    addToShopCar() {
+      this.ballFlag = !this.ballFlag;
+      const goodsInfo = {
+        id: this.id,
+        count: this.selectedCount,
+        price: this.goodsInfo.sell_price,
+        selected: true
+      };
+      this.$store.dispatch("addtToCar", goodsInfo);
     },
-    beforeEnter(el){
-      el.style.transform="translate(0,0)"
+    beforeEnter(el) {
+      el.style.transform = "translate(0,0)";
     },
-    enter(el,done){
-      el.offsetWidth
+    enter(el, done) {
+      el.offsetWidth;
       //小球优化思路
       //位置是不固定的，所以位置不能写死了
       //经过分析，先得到徽标的横纵坐标，栽得到小球的横纵坐标，求差值
       //domObject.getBoundingClientRect()
       //获取小球的位置
-      const ballPosition = this.$refs.ball.getBoundingClientRect()
+      const ballPosition = this.$refs.ball.getBoundingClientRect();
       //获取 徽标位置
-      const badgePostion = document.getElementById('badge').getBoundingClientRect()
-      const xDist = badgePostion.left - ballPosition.left
-      const YDist = badgePostion.top - ballPosition.top
-      el.style.transform=`translate(${xDist}px,${YDist}px)`
-      el.style.transition = 'all 1s cubic-bezier(.25,.68,.43,1.19)'
-      done()
+      const badgePostion = document
+        .getElementById("badge")
+        .getBoundingClientRect();
+      const xDist = badgePostion.left - ballPosition.left;
+      const YDist = badgePostion.top - ballPosition.top;
+      el.style.transform = `translate(${xDist}px,${YDist}px)`;
+      el.style.transition = "all 1s cubic-bezier(.25,.68,.43,1.19)";
+      done();
     },
-    afterEnter(el){
-      this.ballFlag = !this.ballFlag
+    afterEnter(el) {
+      this.ballFlag = !this.ballFlag;
+    },
+    getSelectedCount(count) {
+      //当子组件把 选中的数量传给父组件时，把选中的值保存到data上
+      this.selectedCount = count;
     }
   },
   mounted() {

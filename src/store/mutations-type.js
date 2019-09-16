@@ -1,0 +1,1 @@
+export const ADD_TO_CAR ='add_to_car'

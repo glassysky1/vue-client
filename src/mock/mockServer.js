@@ -130,3 +130,17 @@ Mock.mock(/\/goods\/getdesc/,'get',{
     content:'@cword(20,50)'
   }
 })
+
+//购物车商品列表
+Mock.mock(/\/goods\/getshopcarlist/,'get',{
+  code:0,
+  'data|2-5':[
+    {
+      cou:1,
+      id:'@increment(1)',
+      title:'@cword(10,20)',
+      sell_price:2195,
+      thumb_path:'@dataImage(64x64)'
+    }
+  ]
+})
