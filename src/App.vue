@@ -6,7 +6,7 @@
     <transition>
       <router-view></router-view>
     </transition>
-    <nav class="mui-bar mui-bar-tab">
+    <nav class="mui-bar mui-bar-tab" v-if="$route.meta.hideBack">
       <router-link class="mui-tab-item1" href="#tabbar" to="/home">
         <span class="mui-icon mui-icon-home"></span>
         <span class="mui-tab-label">首页</span>
